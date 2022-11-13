@@ -23,22 +23,21 @@ jobs:
       - name: Create commits
         uses: xtexChooser/hardwork-action@main
         with:
-          name: Test
-          email: test@xtexx.ml
+          name: ZYGLQexplorer
+          email: rareazumaseren1@gmail.com
+          days: 93
       
       - name: Configure
         run: |
           if test -f "README_GENERATED.md"; then
             rm README.md
             mv README_GENERATED.md README.md
-
-            git config user.name xtex Bot
-            git config user.email bot@xtexx.ml
+            git config user.name ZYGLQexplorer
+            git config user.email rareazumaseren1@gmail.com
           
             git add .
-            git commit -m "Configure for first use"
+            git commit -m "Update README.md"
           fi
-
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
